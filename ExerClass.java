@@ -1,33 +1,22 @@
+import java.util.Scanner;
 
-public class ExerClass { 
-	
+public class ExerClass {
+
 	public static void main(String[] args) {
+		Scanner entrada = new Scanner(System.in); 
+		System.out.println("Digite a sua idade:  ");
+		int teste = entrada.nextInt();  
+		System.out.println("Digite a sua grana: "); 
+		double saldo = entrada.nextDouble();
 		
-		PrimeiraClasse objPrimeiraClasse = new PrimeiraClasse (); 
-		objPrimeiraClasse.setCodigo(345); 
-		objPrimeiraClasse.setValor(2000); 
-		objPrimeiraClasse.setDescricao("chato"); 
-		objPrimeiraClasse.setMarca("Ferrari"); 
-		objPrimeiraClasse.setBasico(3, "Metade do dobro de 6");
-		//Descanso1
-		System.out.println(objPrimeiraClasse.getDescricao()); 
-		System.out.println(objPrimeiraClasse.getCodigo()); 
-		System.out.println(objPrimeiraClasse.getMarca()); 
-		System.out.println(objPrimeiraClasse.getValor()); 
+		if (teste < 45) {
+			System.out.println("Você é novo: ");
+		} else {
+			System.out.println("Velhaco");
+		}
+		System.out.println("A sua idade é: "); 
+		System.out.println("A sua grana é: ");
 		
-		//Descanso2
-		System.out.println(objPrimeiraClasse.getBasico()); 
-		System.out.println(objPrimeiraClasse.getDetalheMarca()); 
-		
-		//Descans03
-		System.out.println(objPrimeiraClasse.getDesconto()); 
-		
-		//Descanso4 
-		System.out.println(objPrimeiraClasse.getValores()); 
-		
-		//Descanso5 
-		;
 	}
-	
 
 }
