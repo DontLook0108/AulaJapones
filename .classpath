@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry excluding="Descanso 2/src/|Descanso3-Aluno/src/|Referencia/src/|Descanso/src/" kind="src" path=""/>
+	<classpathentry kind="src" path="Descanso 2/src"/>
+	<classpathentry kind="src" path="Descanso/src"/>
+	<classpathentry kind="src" path="Descanso3-Aluno/src"/>
+	<classpathentry kind="src" path="Referencia/src"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

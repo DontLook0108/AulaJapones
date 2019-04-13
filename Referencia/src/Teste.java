@@ -18,14 +18,7 @@ public class Teste {
 		System.out.println("Operadora: "); 
 		tele.setOperadora(s.next()); 
 		System.out.println("DDD: "); 
-		tele.setDdd(s.nextInt()); 
-		
-		cliente.setFone(tele); 
-		
-		System.out.println("Numero : " + cliente.getFone().getNumero()); 
-		System.out.println("Ramal : " + cliente.getFone().getRamal());  
-		System.out.println("Operadora : " + cliente.getFone().getOperadora()); 
-		System.out.println("DDD: " + cliente.getFone().getDdd());   
+		tele.setDdd(s.nextInt());    
 		
 		Endereco end = new Endereco(); 
 		System.out.println("Bairro: "); 
@@ -54,6 +47,12 @@ public class Teste {
 		System.out.println("Número: " + cliente.getEndereco().getNumero()); 
 		System.out.println("Rua: " + cliente.getEndereco().getLogradouro());
 			
+		cliente.setFone(tele); 
+		
+		System.out.println("Numero : " + cliente.getFone().getNumero()); 
+		System.out.println("Ramal : " + cliente.getFone().getRamal());  
+		System.out.println("Operadora : " + cliente.getFone().getOperadora()); 
+		System.out.println("DDD: " + cliente.getFone().getDdd());
 	}
 
 }
