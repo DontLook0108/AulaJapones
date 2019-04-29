@@ -11,7 +11,7 @@ public class TesteConta {
 		conta.setSaldo(s.nextDouble()); 
 		Cliente cliente = new Cliente(); 
 		System.out.println("Digite o nome: ");
-		cliente.setNome(s.next());
+		cliente.setNome(s.next() + s.nextLine());
 		System.out.println("Digite o cpf: ");
 		cliente.setCpf(s.next());
 		Endereço end = new Endereço(); 

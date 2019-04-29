@@ -1,7 +1,7 @@
 package br.com.fiap.bens;
 
 public class Imóvel {
-	private double tamanho; 
+	private int tamanho; 
 	private String endereco; 
 	private double valor; 
 	private boolean residencial;
@@ -9,7 +9,7 @@ public class Imóvel {
 	public double getTamanho() {
 		return tamanho;
 	}
-	public void setTamanho(double tamanho) {
+	public void setTamanho(int tamanho) {
 		this.tamanho = tamanho;
 	}
 	public String getEndereco() {

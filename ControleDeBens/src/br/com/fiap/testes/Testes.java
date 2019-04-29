@@ -19,13 +19,13 @@ public class Testes {
 		System.out.println("Imoveis");
 		Imóvel imv = new Imóvel(); 
 		System.out.println("Tamanho: "); 
-		imv.setTamanho(s.nextDouble());
+		imv.setTamanho(s.nextInt());
 		System.out.println("Endereço: ");
 		imv.setEndereco(s.next());
 		System.out.println("Valor: ");
 		imv.setValor(s.nextDouble());
 		System.out.println("É residencial: ");
-		imv.equals("s");
+		imv.setResidencial(s.nextBoolean());
 		
 		System.out.println("Veiculos");
 		Veiculos vei = new Veiculos(); 
@@ -36,7 +36,7 @@ public class Testes {
 		System.out.println("Quantidade de Portas: ");
 		vei.setQtdePortas(s.nextInt());
 		System.out.println("O carro é zero ou não?: ");
-		vei.isZero(); 
+		vei.setZero(s.nextBoolean()); 
 		
 		pf.setImovel(imv);
 		System.out.println("Nome: " +pf.getNome());
