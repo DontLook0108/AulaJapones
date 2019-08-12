@@ -18,7 +18,6 @@ public class Testes {
 		bac.calcularMensalidade(1.5);
 		System.out.println(bac.getTudo());
 		
-		
 		Medio med = new Medio(); 
 		med.setDescricao("Curso tecnico de 3 anos");
 		med.setPeriodo(6);
