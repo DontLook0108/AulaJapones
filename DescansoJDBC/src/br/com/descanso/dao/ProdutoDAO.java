@@ -33,6 +33,12 @@ public class ProdutoDAO {
 			return new Produto();
 		}
 	} 
+	public int deletarUser(int cod_prod) throws Exception {
+		stmt = con.prepareStatement
+				("delete from RW_T_PRODUTO where CD_PRODUTO=?"); 
+		stmt.setInt(1, cod_prod); 
+		return stmt.executeUpdate();
+	}
 	public void encerrar() throws Exception{
 		con.close();
 	}

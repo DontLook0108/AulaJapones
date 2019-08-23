@@ -32,6 +32,22 @@ public class UsuarioDAO {
 			return new Usuario();
 		}
 	} 
+	public int deletarUser(int codigo) throws Exception {
+		stmt = con.prepareStatement
+				("delete from RW_T_USUARIO where ID_USUARIO=?"); 
+		stmt.setInt(1, codigo); 
+		return stmt.executeUpdate();
+	}
+	
+	public int addUser(Usuario u) throws Exception{
+		stmt = con.prepareStatement("INSERT INTO "
+				+ "RW_T_USUARIO(ID_USUARIO, NM_USUARIO, PW_USUARIO) "
+				+ "VALUES(?,?,?)");
+		stmt.setInt(1, u.getCodigo());
+		stmt.setString(2, u.getNome());
+		stmt.setString(3, u.getSenha());
+		return stmt.executeUpdate();
+	}
 	
 	public void encerrar() throws Exception{
 		con.close();
