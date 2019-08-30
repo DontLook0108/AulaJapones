@@ -19,12 +19,12 @@ public class UsuarioDAO {
 
 	public Usuario getUser(int codigo) throws Exception {
 		stmt = con.prepareStatement
-				("select * from RW_T_USUARIO where ID_USUARIO=?");
+				("select * from RW_T_USUARIO where CD_USUARIO=?");
 		stmt.setInt(1, codigo);
 		rs = stmt.executeQuery();
 		if (rs.next()) { 
 			return new Usuario(
-					rs.getInt("ID_USUARIO"),
+					rs.getInt("CD_USUARIO"),
 					rs.getString("NM_USUARIO"),
 					rs.getString("PW_USUARIO")
 					);
@@ -34,14 +34,14 @@ public class UsuarioDAO {
 	} 
 	public int deletarUser(int codigo) throws Exception {
 		stmt = con.prepareStatement
-				("delete from RW_T_USUARIO where ID_USUARIO=?"); 
+				("delete from RW_T_USUARIO where CD_USUARIO=?"); 
 		stmt.setInt(1, codigo); 
 		return stmt.executeUpdate();
 	}
 	
 	public int addUser(Usuario u) throws Exception{
 		stmt = con.prepareStatement("INSERT INTO "
-				+ "RW_T_USUARIO(ID_USUARIO, NM_USUARIO, PW_USUARIO) "
+				+ "RW_T_USUARIO(CD_USUARIO, NM_USUARIO, PW_USUARIO) "
 				+ "VALUES(?,?,?)");
 		stmt.setInt(1, u.getCodigo());
 		stmt.setString(2, u.getNome());
